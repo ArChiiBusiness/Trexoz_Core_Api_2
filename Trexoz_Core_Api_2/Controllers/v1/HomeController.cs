@@ -15,9 +15,9 @@ namespace Trexoz_Core_Api_2.Controllers
     {
         // GET: api/Home
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            return Content("Hello world!");
         }
 
         // GET: api/Home/5
